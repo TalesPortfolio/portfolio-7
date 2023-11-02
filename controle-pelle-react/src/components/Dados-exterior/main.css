@@ -40,6 +40,9 @@
 }
 
 @media (max-width: 425px){
+    p{
+        font-size: 12px;
+    }
     .dados{
         .dados__form{
             .dados__form__menu{
@@ -63,9 +66,9 @@
     }
 
     .spanPret{
-      font-size: 12px;
+      font-size: 9px;
      }
      .spanNon{
-       font-size: 12px;
+       font-size: 9px;
      }
 }
