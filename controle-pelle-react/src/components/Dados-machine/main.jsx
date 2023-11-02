@@ -11,11 +11,11 @@ const DadosMachine = () => {
               <input className="input" type="text" />
             </div>
             <div className="dadosMachine__form__imgDados--dados--input">
-              <label className="label" htmlFor="serie">N° Serie:</label>
+              <label className="label" htmlFor="modelo">Modelo:</label>
               <input className="input" type="text" />
             </div>
             <div className="dadosMachine__form__imgDados--dados--input">
-              <label className="label" htmlFor="modelo">Modelo:</label>
+              <label className="label" htmlFor="serie">N° Serie:</label>
               <input className="input" type="text" />
             </div>
             <div className="dadosMachine__form__imgDados--dados--input">
@@ -23,11 +23,11 @@ const DadosMachine = () => {
               <input className="input" type="text" />
             </div>
             <div className="dadosMachine__form__imgDados--dados--input">
-              <label className="label" htmlFor="data">Date:</label>
+              <label className="label" htmlFor="Heure">Contrato:</label>
               <input className="input" type="text" />
             </div>
             <div className="dadosMachine__form__imgDados--dados--input">
-              <label className="label" htmlFor="serie">N° Serie:</label>
+              <label className="label" htmlFor="Heure">Cliente:</label>
               <input className="input" type="text" />
             </div>
           </div>

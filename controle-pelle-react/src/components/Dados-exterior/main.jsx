@@ -7,7 +7,7 @@ const DadosExterior = () => {
         <div className="dados__form__menu mb-2">
           <div className="row bg-secondary">
             <div className="col-4">
-              <h4>Extérieur</h4>
+              <h4>Inside / Outside</h4>
             </div>
             <div className="col-4">
               <h4>Départ</h4>
@@ -200,7 +200,81 @@ const DadosExterior = () => {
             </div>
             <hr />
           </div>
-        </div>
+          <div className="row">
+            <div className="dados__form__items__div col-4">
+                <p>Siège</p>
+            </div>
+            <div className="dados__form__items__div col-4">
+                <input className="dados__form__items__div--input" type="radio" name="departSiege" id="depart_vitre_ok" value="OK" /><span className="spanPret">PRET</span>..
+                <input type="radio" name="departSiege" id="depart_vitre_non" value="NON" /><span className="spanNon" >NON</span>
+            </div>
+            <div className="dados__form__items__div col-4">
+                <input className="dados__form__items__div--input" type="radio" name="returnSiege" id="return_vitre_ok" value="OK" /><span className="spanPret">PRET</span>..
+                <input type="radio" name="returnSiege" id="return_vitre_non" value="NON" /><span className="spanNon" >NON</span>
+            </div>
+            <hr />
+          </div>
+          <div className="row">
+            <div className="dados__form__items__div col-4">
+                <p>Manettes</p>
+            </div>
+            <div className="dados__form__items__div col-4">
+                <input className="dados__form__items__div--input" type="radio" name="departManettes" id="depart_vitre_ok" value="OK" /><span className="spanPret">PRET</span>..
+                <input type="radio" name="departManettes" id="depart_vitre_non" value="NON" /><span className="spanNon" >NON</span>
+            </div>
+            <div className="dados__form__items__div col-4">
+                <input className="dados__form__items__div--input" type="radio" name="returnManettes" id="return_vitre_ok" value="OK" /><span className="spanPret">PRET</span>..
+                <input type="radio" name="returnManettes" id="return_vitre_non" value="NON" /><span className="spanNon" >NON</span>
+            </div>
+            <hr />
+          </div>
+          <div className="row">
+            <div className="dados__form__items__div col-4">
+                <p>Clé</p>
+            </div>
+            <div className="dados__form__items__div col-4">
+                <input className="dados__form__items__div--input" type="radio" name="departCle" id="depart_vitre_ok" value="OK" /><span className="spanPret">PRET</span>..
+                <input type="radio" name="departCle" id="depart_vitre_non" value="NON" /><span className="spanNon" >NON</span>
+            </div>
+            <div className="dados__form__items__div col-4">
+                <input className="dados__form__items__div--input" type="radio" name="returnCle" id="return_vitre_ok" value="OK" /><span className="spanPret">PRET</span>..
+                <input type="radio" name="returnCle" id="return_vitre_non" value="NON" /><span className="spanNon" >NON</span>
+            </div>
+            <hr />
+          </div>
+          <div className="row">
+            <div className="dados__form__items__div col-4">
+                <p>Clé Godet</p>
+            </div>
+            <div className="dados__form__items__div col-4">
+                <input className="dados__form__items__div--input" type="radio" name="departDeeverrouillage" id="depart_vitre_ok" value="OK" /><span className="spanPret">PRET</span>..
+                <input type="radio" name="departDeeverrouillage" id="depart_vitre_non" value="NON" /><span className="spanNon" >NON</span>
+            </div>
+            <div className="dados__form__items__div col-4">
+                <input className="dados__form__items__div--input" type="radio" name="returnDeeverrouillage" id="return_vitre_ok" value="OK" /><span className="spanPret">PRET</span>..
+                <input type="radio" name="returnDeeverrouillage" id="return_vitre_non" value="NON" /><span className="spanNon" >NON</span>
+            </div>
+            <hr />
+          </div>
+          </div>
+          <div className="row">
+            <div className="dados__form__items__div col-4">
+                <p>Chauffage</p>
+            </div>
+            <div className="dados__form__items__div col-4">
+                <input className="dados__form__items__div--input" type="radio" name="departChauffage" id="depart_vitre_ok" value="OK" /><span className="spanPret">PRET</span>..
+                <input type="radio" name="departChauffage" id="depart_vitre_non" value="NON" /><span className="spanNon" >NON</span>
+            </div>
+            <div className="dados__form__items__div col-4">
+                <input className="dados__form__items__div--input" type="radio" name="returnChauffage" id="return_vitre_ok" value="OK" /><span className="spanPret">PRET</span>..
+                <input type="radio" name="returnChauffage" id="return_vitre_non" value="NON" /><span className="spanNon" >NON</span>
+            </div>
+            <hr />
+          </div>
+          <div className="dadosMachine__form__imgDados--dados--input">
+              <label className="label" htmlFor="Heure">Controlé par :</label>
+              <input className="input" type="text" required/>
+            </div>
       </form>
     </div>
   );

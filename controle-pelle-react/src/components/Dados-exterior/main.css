@@ -9,7 +9,7 @@
 
             
             .dados__form__items__div{
-               
+               height: 25px;
                 .dados__form__items__div--input{
 
                    
@@ -27,6 +27,16 @@
 .spanNon{
     color: red;
     font-weight: bold;
+}
+
+.input{
+    margin-left: 5px;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+}
+.input:hover{
+    background-color: #ccc;
 }
 
 @media (max-width: 425px){
