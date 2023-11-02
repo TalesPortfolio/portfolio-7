@@ -1,0 +1,38 @@
+
+.container__header{
+    display: flex;
+    justify-content: center;
+    
+
+    .container__header--img{
+    width: 300px;
+    margin-right: 20px;
+    }
+    .container__header--h1{
+        display: flex;
+        align-items: center;
+        text-decoration: underline;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container__header{
+        .container__header--img{
+        width: 250px;
+        }
+    }
+  }
+
+  @media (max-width: 425px){
+    .container__header{
+        .container__header--img{
+        width: 150px;
+        margin-right: 10px;
+        }
+        .container__header--h1{
+            font-size: 12px;
+        }
+    }
+
+  }

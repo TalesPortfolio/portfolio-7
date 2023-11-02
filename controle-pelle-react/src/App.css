@@ -1,0 +1,5 @@
+.container{
+  /* Tamanho da folha A4 em pixels */
+  max-width: 794px; /* A largura é de aproximadamente 210 mm */
+  max-height: 1123px; /* A altura é de aproximadamente 297 mm */
+}
