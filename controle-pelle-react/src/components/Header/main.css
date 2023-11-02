@@ -1,5 +1,6 @@
 
 .container__header{
+    margin-top: 5px;
     display: flex;
     justify-content: center;
     
@@ -18,6 +19,7 @@
 
 @media (max-width: 768px) {
     .container__header{
+        margin-top: 5px;
         .container__header--img{
         width: 250px;
         }
@@ -26,6 +28,7 @@
 
   @media (max-width: 425px){
     .container__header{
+        margin-top: 5px;
         .container__header--img{
         width: 150px;
         margin-right: 10px;

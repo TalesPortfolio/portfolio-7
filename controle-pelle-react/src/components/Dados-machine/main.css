@@ -1,0 +1,96 @@
+.dadosMachine{
+margin-top: 10px;
+    .dadosMachine__form{
+        
+        .dadosMachine__form__imgDados{
+             display: flex;
+             justify-content: space-between;
+             flex-direction: row;
+             width: 100%;
+             margin-top: 20px;
+             
+
+
+             .dadosMachine__form__imgDados--dados{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                width: 50%;
+                .dadosMachine__form__imgDados--dados--input{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content:space-between;
+                    
+                    .label{
+                        width: 20%;
+                        
+                    }
+                    .input{
+                        width: 80%;
+                        border: none;
+                        font-weight: BOLD;
+                    }
+                    .input:hover{
+                        cursor: pointer;
+                            background-color: #ccc;
+                    }
+                }
+
+             }
+
+             .dadosMachine__form__imgDados--img{
+                display: flex;
+                flex-direction: row;
+                justify-content: end;
+                width: 50%;
+                
+                .dadosMachine__form__imgDados--img--foto{
+                    width: 200px;
+                }
+             }
+
+        }
+
+
+    }
+
+}
+
+@media (max-width: 425px){
+    .dadosMachine{
+            .dadosMachine__form{
+                
+                .dadosMachine__form__imgDados{
+
+                     .dadosMachine__form__imgDados--dados{
+
+                        width: 60%;
+                        .dadosMachine__form__imgDados--dados--input{
+                            margin-top: 3px;
+                            .label{
+                                width: 40%;
+                                
+                            }
+                            .input{
+                                width: 60%;
+
+                            }                      
+                        }       
+                     }
+        
+                     .dadosMachine__form__imgDados--img{
+
+                        width: 40%;                       
+                        .dadosMachine__form__imgDados--img--foto{
+                            width: 120px;
+                            height: 100px;
+                        }
+                     }
+        
+                }
+        
+        
+            }
+        
+        }
+}

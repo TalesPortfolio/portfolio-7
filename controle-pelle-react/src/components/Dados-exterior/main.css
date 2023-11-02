@@ -1,0 +1,61 @@
+.dados{
+
+    .dados__form{
+        .dados__form__menu{
+            
+        }
+
+        .dados__form__items{
+
+            
+            .dados__form__items__div{
+               
+                .dados__form__items__div--input{
+
+                   
+                }
+               
+            }
+        }
+    }
+}
+
+.spanPret{
+   color: rgb(44, 128, 44);
+   font-weight: bold;
+}
+.spanNon{
+    color: red;
+    font-weight: bold;
+}
+
+@media (max-width: 425px){
+    .dados{
+        .dados__form{
+            .dados__form__menu{
+                
+            }
+    
+            .dados__form__items{
+    
+                
+                .dados__form__items__div{
+    
+                    
+                    .dados__form__items__div--input{
+    
+                       
+                    }
+                   
+                }
+            }
+        }
+    }
+
+    .spanPret{
+      font-size: 12px;
+     }
+     .spanNon{
+       font-size: 12px;
+     }
+}
