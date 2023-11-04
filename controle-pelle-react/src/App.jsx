@@ -1,13 +1,38 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+import emailjs from 'emailjs-com';
 import html2canvas from 'html2canvas';
 import jsPDF from 'jspdf';
 import Header from "./components/Header/main";
 import DadosMachine from './components/Dados-machine/main';
 import DadosExterior from './components/Dados-exterior/main';
-import './App.css'
-
+import './App.css';
 
 function App() {
+  const sendEmail = () => {
+    // Configure suas credenciais de e-mail
+    emailjs.init('NKWHWG3vyTDxLko_u'); // Substitua 'user_your_user_id' pelo seu User ID
+
+    // Defina um modelo de e-mail com o PDF anexado
+    const templateParams = {
+      to_email: 'tales_lima_1982@hotmail.com', // Endereço de e-mail do destinatário
+      from_name: 'Tales', // Seu nome
+      message: 'Envio de PDF gerado',
+      attachment: 'arquivo.pdf', // Nome do arquivo PDF gerado
+    };
+
+    // Envie o e-mail
+    emailjs.send('service_fnexzk8', 'template_rq56gjd', templateParams)
+
+      .then((response) => {
+        console.log('E-mail enviado com sucesso!', response);
+      })
+      .catch((error) => {
+        console.error('Erro ao enviar o e-mail:', error);
+      });
+  };
+
+
+
   const gerarPDF = () => {
     const conteudoHTML = document.getElementById('conteudoHTML');
 
@@ -35,25 +60,23 @@ function App() {
 
       // Salve o PDF com um nome de arquivo
       pdf.save('arquivo.pdf');
+
+      // Envie o e-mail após a criação do PDF
+     // vou manter desativado porque tem que pagar
+     // sendEmail();
     });
   };
-  
 
   return (
     <>
-    <div className="container" id='conteudoHTML'>
-      <Header />
-      <DadosMachine />
-      <DadosExterior />
-    </div>
-    <button onClick={gerarPDF}>Gerar PDF</button>
+      <div className="container" id='conteudoHTML'>
+        <Header />
+        <DadosMachine />
+        <DadosExterior />
+      </div>
+      <button onClick={gerarPDF}>Gerar PDF</button>
     </>
-    
-    
-    
-    
-  )
+  );
 }
 
-export default App
-
+export default App;

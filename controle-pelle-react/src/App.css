@@ -1,13 +1,28 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
   font-size: 14px;
-
 }
-.container{
+
+.container {
   /* Tamanho da folha A4 em pixels */
   max-width: 794px; /* A largura é de aproximadamente 210 mm */
   max-height: 1123px; /* A altura é de aproximadamente 297 mm */
 }
+
+@media screen and (max-width: 420px) {
+  .container {
+    /* Ajuste as configurações de página para dispositivos móveis */
+    max-width: 100%; /* Usar toda a largura da tela */
+    max-height: 100%; /* Usar toda a altura da tela */
+  }
+
+  @page {
+    size: A4;
+    margin: 0;
+    scale: 1; /* Ajuste a escala conforme necessário */
+  }
+}
+
