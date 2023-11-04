@@ -55,15 +55,21 @@ margin-top: 0px;
     }
 
 }
+@page {
+    size: A4;
+    margin: 5px;
+    scale: 3; /* Ajuste a escala conforme necessário */
+  }
+  
 
-@media (max-width: 425px){
+@media only screen and (min-width: 300px) and (max-width: 767px)  {
     .dadosMachine{
             .dadosMachine__form{
                 
                 .dadosMachine__form__imgDados{
 
                      .dadosMachine__form__imgDados--dados{
-
+                        height: 140px;
                         width: 60%;
                         .dadosMachine__form__imgDados--dados--input{
                             margin-top: 3px;

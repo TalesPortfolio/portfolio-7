@@ -12,17 +12,17 @@
   max-height: 1123px; /* A altura é de aproximadamente 297 mm */
 }
 
-@media screen and (max-width: 420px) {
+@media only screen and (min-width: 300px) and (max-width: 767px) {
   .container {
     /* Ajuste as configurações de página para dispositivos móveis */
     max-width: 100%; /* Usar toda a largura da tela */
     max-height: 100%; /* Usar toda a altura da tela */
   }
+}
 
-  @page {
-    size: A4;
-    margin: 0;
-    scale: 1; /* Ajuste a escala conforme necessário */
-  }
+@page {
+  size: A4;
+  margin: 5px;
+  scale: 3; /* Ajuste a escala conforme necessário */
 }
 

@@ -8,6 +8,7 @@ import DadosExterior from './components/Dados-exterior/main';
 import './App.css';
 
 function App() {
+  let pdfCount = 1; // Inicializa o contador de PDF
   
   //===== Funcao que envia email desativada Fuciona corretamente.=====
   /*
@@ -38,7 +39,7 @@ function App() {
 
   const gerarPDF = () => {
     const conteudoHTML = document.getElementById('conteudoHTML');
-
+    const nomeDoPDF = `controle-machine${pdfCount}.pdf`;
     // Use o html2canvas para capturar o conteúdo HTML e transformá-lo em uma imagem
     html2canvas(conteudoHTML).then((canvas) => {
       const imgData = canvas.toDataURL('image/png');
@@ -62,8 +63,8 @@ function App() {
       }
 
       // Salve o PDF com um nome de arquivo
-      pdf.save('arquivo.pdf');
-
+      pdf.save(nomeDoPDF);
+      pdfCount++;
       // Envie o e-mail após a criação do PDF
      // vou manter desativado porque tem que pagar
      // sendEmail();
@@ -72,14 +73,17 @@ function App() {
 
   return (
     <>
-      <div className="container" id='conteudoHTML'>
+      <div className="container" id="conteudoHTML">
         <Header />
         <DadosMachine />
         <DadosExterior />
-      </div>   
-      <button onClick={gerarPDF} className="btn btn-primary">Gerar PDF</button>
+      </div>
+      <div className="d-flex justify-content-center">
+        <button onClick={gerarPDF} className="btn btn-primary">Gerar PDF</button>
+      </div>
     </>
   );
+  
 }
 
 export default App;

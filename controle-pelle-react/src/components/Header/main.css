@@ -26,7 +26,7 @@
     }
   }
 
-  @media (max-width: 425px){
+  @media only screen and (min-width: 300px) and (max-width: 767px) {
     .container__header{
         margin-top: 5px;
         .container__header--img{
@@ -39,3 +39,10 @@
     }
 
   }
+
+  @page {
+    size: A4;
+    margin: 5px;
+    scale: 3; /* Ajuste a escala conforme necessário */
+  }
+  

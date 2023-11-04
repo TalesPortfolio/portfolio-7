@@ -38,8 +38,14 @@
 .input:hover{
     background-color: #ccc;
 }
+@page {
+    size: A4;
+    margin: 5px;
+    scale: 3; /* Ajuste a escala conforme necessário */
+  }
+  
 
-@media (max-width: 425px){
+@media only screen and (min-width: 300px) and (max-width: 767px) {
     p{
         font-size: 12px;
     }
