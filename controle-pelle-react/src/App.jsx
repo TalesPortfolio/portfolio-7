@@ -1,5 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import emailjs from 'emailjs-com';
+//import emailjs from 'emailjs-com';  se o envio de email for ativado descomentar essa linha
 import html2canvas from 'html2canvas';
 import jsPDF from 'jspdf';
 import Header from "./components/Header/main";
@@ -8,6 +8,9 @@ import DadosExterior from './components/Dados-exterior/main';
 import './App.css';
 
 function App() {
+  
+  //===== Funcao que envia email desativada Fuciona corretamente.=====
+  /*
   const sendEmail = () => {
     // Configure suas credenciais de e-mail
     emailjs.init('NKWHWG3vyTDxLko_u'); // Substitua 'user_your_user_id' pelo seu User ID
@@ -30,7 +33,7 @@ function App() {
         console.error('Erro ao enviar o e-mail:', error);
       });
   };
-
+*/
 
 
   const gerarPDF = () => {
@@ -73,8 +76,8 @@ function App() {
         <Header />
         <DadosMachine />
         <DadosExterior />
-      </div>
-      <button onClick={gerarPDF}>Gerar PDF</button>
+      </div>   
+      <button onClick={gerarPDF} className="btn btn-primary">Gerar PDF</button>
     </>
   );
 }

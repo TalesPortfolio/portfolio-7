@@ -8,27 +8,27 @@ const DadosMachine = () => {
           <div className="dadosMachine__form__imgDados--dados">
             <div className="dadosMachine__form__imgDados--dados--input">
               <label className="label" htmlFor="data">Date:</label>
-              <input className="input" type="text" />
+              <input className="input" type="text" id="data"/>
             </div>
             <div className="dadosMachine__form__imgDados--dados--input">
               <label className="label" htmlFor="modelo">Modelo:</label>
-              <input className="input" type="text" />
+              <input className="input" type="text" id="modelo"/>
             </div>
             <div className="dadosMachine__form__imgDados--dados--input">
               <label className="label" htmlFor="serie">N° Serie:</label>
-              <input className="input" type="text" />
+              <input className="input" type="text" id="serie"/>
             </div>
             <div className="dadosMachine__form__imgDados--dados--input">
-              <label className="label" htmlFor="Heure">Heure:</label>
-              <input className="input" type="text" />
+              <label className="label" htmlFor="heure">Heure:</label>
+              <input className="input" type="text" id="heure"/>
             </div>
             <div className="dadosMachine__form__imgDados--dados--input">
-              <label className="label" htmlFor="Heure">Contrato:</label>
-              <input className="input" type="text" />
+              <label className="label" htmlFor="contrato">Contrato:</label>
+              <input className="input" type="text" id="contrato"/>
             </div>
             <div className="dadosMachine__form__imgDados--dados--input">
-              <label className="label" htmlFor="Heure">Cliente:</label>
-              <input className="input" type="text" />
+              <label className="label" htmlFor="cliente">Cliente:</label>
+              <input className="input" type="text" id="cliente"/>
             </div>
           </div>
           <div className="dadosMachine__form__imgDados--img"> 
