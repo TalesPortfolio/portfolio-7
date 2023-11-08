@@ -34,6 +34,20 @@ const DadosExterior = () => {
           </div>
           <div className="row">
             <div className="dados__form__items__div col-4">
+                <p>Diesel</p>
+            </div>
+            <div className="dados__form__items__div col-4">
+                <input className="dados__form__items__div--input" type="radio" name="departCarburant" id="depart_Carburant_ok" value="OK" /><span className="spanPret">PRET</span>..
+                <input type="radio" name="departCarburant" id="depart_Carburant_non" value="NON" /><span className="spanNon" >NON</span>
+            </div>
+            <div className="dados__form__items__div col-4">
+                <input className="dados__form__items__div--input" type="radio" name="returnCarburant" id="return_Carburant_ok" value="OK" /><span className="spanPret">PRET</span>..
+                <input type="radio" name="returnCarburant" id="return_Carburant_non" value="NON" /><span className="spanNon" >NON</span>
+            </div>
+            <hr />
+          </div>
+          <div className="row">
+            <div className="dados__form__items__div col-4">
                 <p>Vitres</p>
             </div>
             <div className="dados__form__items__div col-4">
@@ -127,20 +141,6 @@ const DadosExterior = () => {
             <div className="dados__form__items__div col-4">
                 <input className="dados__form__items__div--input" type="radio" name="returnChenilles" id="return_Chenilles_ok" value="OK" /><span className="spanPret">PRET</span>..
                 <input type="radio" name="returnChenilles" id="return_Chenilles_non" value="NON" /><span className="spanNon" >NON</span>
-            </div>
-            <hr />
-          </div>
-          <div className="row">
-            <div className="dados__form__items__div col-4">
-                <p>Carburant</p>
-            </div>
-            <div className="dados__form__items__div col-4">
-                <input className="dados__form__items__div--input" type="radio" name="departCarburant" id="depart_Carburant_ok" value="OK" /><span className="spanPret">PRET</span>..
-                <input type="radio" name="departCarburant" id="depart_Carburant_non" value="NON" /><span className="spanNon" >NON</span>
-            </div>
-            <div className="dados__form__items__div col-4">
-                <input className="dados__form__items__div--input" type="radio" name="returnCarburant" id="return_Carburant_ok" value="OK" /><span className="spanPret">PRET</span>..
-                <input type="radio" name="returnCarburant" id="return_Carburant_non" value="NON" /><span className="spanNon" >NON</span>
             </div>
             <hr />
           </div>
