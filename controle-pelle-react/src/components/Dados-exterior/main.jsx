@@ -20,7 +20,7 @@ const DadosExterior = () => {
         <div className="dados__form__items">
           <div className="row">
             <div className="dados__form__items__div col-4">
-                <p>Lavage</p>
+                <p>Machine propre</p>
             </div>
             <div className="dados__form__items__div col-4">
                 <input className="dados__form__items__div--input" type="radio" name="departlavage" id="depart_Lavage_ok" value="OK" /><span className="spanPret">PRET</span>..
@@ -118,7 +118,7 @@ const DadosExterior = () => {
           </div>
           <div className="row">
             <div className="dados__form__items__div col-4">
-                <p>Chenilles</p>
+                <p>Chenilles / Pneus</p>
             </div>
             <div className="dados__form__items__div col-4">
                 <input className="dados__form__items__div--input" type="radio" name="departChenilles" id="depart_Chenilles_ok" value="OK" /><span className="spanPret">PRET</span>..

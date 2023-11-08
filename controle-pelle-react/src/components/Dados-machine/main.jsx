@@ -23,12 +23,16 @@ const DadosMachine = () => {
               <input className="input" type="text" id="heure"/>
             </div>
             <div className="dadosMachine__form__imgDados--dados--input">
-              <label className="label" htmlFor="contrato">Contrato:</label>
-              <input className="input" type="text" id="contrato"/>
+              <label className="label" htmlFor="disel">Diesel:</label>
+              <input className="input" type="text" id="disel"/>
             </div>
             <div className="dadosMachine__form__imgDados--dados--input">
-              <label className="label" htmlFor="cliente">Cliente:</label>
-              <input className="input" type="text" id="cliente"/>
+              <label className="label" htmlFor="netoyagen">Nettoyage:</label>
+              <input className="input" type="text" id="netoyagen"/>
+            </div>
+            <div className="dadosMachine__form__imgDados--dados--input">
+              <label className="label" htmlFor="contrato">N° contrat:</label>
+              <input className="input" type="text" id="contrato"/>
             </div>
           </div>
           <div className="dadosMachine__form__imgDados--img"> 
